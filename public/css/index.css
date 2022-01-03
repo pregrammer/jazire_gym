@@ -1,0 +1,82 @@
+@font-face {
+    font-family: leyla;
+    src: url(./fonts/leyla_0.ttf);
+}
+@font-face {
+    font-family: bnazanin;
+    src: url(./fonts/BNazanin.ttf);
+}
+@font-face {
+    font-family: vazir;
+    src: url(./fonts/Vazir-Regular.ttf);
+}
+@font-face {
+    font-family: salamat;
+    src: url(./fonts/Salamat.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+main{
+    width: 100%;
+    height: 73vh;
+    background-color: #1D2460;
+}
+main .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.main--course-box{
+    width: 23%;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: unset;
+    margin-top: 6%;
+}
+.main--course-box:hover{
+    color: unset;
+}
+.main--course-links{
+    position: absolute;
+    bottom: 17%;
+}
+.main--course-box-content{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main--course-box-content h3{
+    font-family: bnazanin;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main--course-box-content p{
+    font-family: bnazanin;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.main--course-box-content div{
+    width: 100%;
+    margin: 1rem 0;
+    border-bottom: 1px solid #000;
+}
+.no-courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: vazir;
+    margin-top: 7rem;
+}

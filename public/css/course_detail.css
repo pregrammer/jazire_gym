@@ -1,0 +1,123 @@
+@font-face {
+    font-family: leyla;
+    src: url(./fonts/leyla_0.ttf);
+}
+@font-face {
+    font-family: bnazanin;
+    src: url(./fonts/BNazanin.ttf);
+}
+@font-face {
+    font-family: vazir;
+    src: url(./fonts/Vazir-Regular.ttf);
+}
+@font-face {
+    font-family: salamat;
+    src: url(./fonts/Salamat.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+main{
+    width: 100%;
+    background-color: #1D2460;
+}
+.main--top{
+    height: 86vh;
+    background-image: url(../imgs/course_bgc/volleyball.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main--top-content{
+    width: 85vw;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    direction: rtl;
+    font-family: vazir;
+    padding: 4rem;
+}
+.main--top-content p{
+    margin: 2rem 2.5rem 2rem 0;
+}
+.main--top-content p:nth-of-type(2){
+    line-height: 2.5rem;
+}
+.main--down{
+    direction: rtl;
+    padding: 3rem 6rem 3rem 6rem;
+}
+.main--down h3{
+    font-family: vazir;
+    background-color: yellow;
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+.main--down-course-info{
+    width: 100%;
+    height: 600px;
+    background-color: #A5BC8C;
+    margin: 3rem 0;
+    padding: 6rem 4rem 0 4rem;
+    position: relative;
+}
+.main--down-course-info > img{
+    position: absolute;
+    left: 8.5%;
+    top: 6%;
+    width: 15%;
+    border-radius: 45%;
+}
+.course-info-row{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.course-info-row label{
+    font-family: vazir;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 2.5rem;
+}
+.course-info-row:nth-of-type(2) label{
+    margin-left: 3.7rem;
+}
+.course-info-row:nth-of-type(3) label{
+    margin-left: 4.4rem;
+}
+.course-info-row:nth-of-type(4) label{
+    margin-left: 4rem;
+}
+.course-info-row:nth-of-type(5) label{
+    margin-left: 3.2rem;
+}
+.course-info-row > div{
+    width: 87%;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: vazir;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+.course-info-row:first-of-type > div{
+    width: 65%;
+}
+main > a:last-of-type{
+    padding: 1rem 7rem;
+    background-color: #20EB49;
+    text-decoration: none;
+    color: unset;
+    font-family: vazir;
+    border-radius: 15px;
+    position: relative;
+    left: 6rem;
+    bottom: 4rem;
+}

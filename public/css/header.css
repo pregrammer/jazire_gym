@@ -1,0 +1,110 @@
+header{
+    width: 100%;
+    height: 15vh;
+}
+.header--top{
+    height: 40%;
+    background-color: #D9EC5A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top--icons{
+    width: 13%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.header-top--icons a{
+    text-decoration: none;
+    color: unset;
+}
+.header-top--entery{
+    margin-right: 25%;
+}
+.header-top--entery a{
+    text-decoration: none;
+    color: unset;
+    font-family: vazir;
+    font-size: 1rem;
+}
+.header-top--info{
+    margin-right: 5%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-top--info span i{
+    margin-left: 0.5vw;
+}
+.header--down{
+    height: 60%;
+    background-color: #fff;
+    display: flex;
+    justify-content: end;
+}
+.header--down > ul{
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+}
+.header--down > ul li{
+    display: inline-block;
+    margin-right: 1.5rem;
+    height: 100%;
+}
+.header--down > ul li a{
+    display: block;
+    text-decoration: none;
+    color: unset;
+    height: 100%;
+    padding-top: 1.5rem;
+    font-family: vazir;
+    font-size: 1rem;
+}
+.header--down > ul > li:last-of-type{
+    padding-top: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    font-family: vazir;
+    font-size: 1rem;
+}
+.header--down-drop-down{
+    display: none;
+    background-color: rgb(90, 245, 90);
+    position: absolute;
+    width: 6.5rem;
+    right: 0;
+    padding: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 1;
+}
+.header--down > ul > li:last-of-type:hover .header--down-drop-down{
+    display: block;
+}
+.header--down > ul li:last-of-type ul li{
+    width: 100%;
+}
+.header--down-drop-down li:hover{
+    background-color: rgb(61, 201, 61);
+}
+.header--down > ul li:last-of-type ul li a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.2rem;
+}
+.header--down > span{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    margin-right: 1.1%;
+    user-select: none;
+    font-family: vazir;
+    font-size: 1rem;
+}
+.header--down > span img{
+    height: 100%;
+}

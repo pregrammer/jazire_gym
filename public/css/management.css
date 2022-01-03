@@ -1,0 +1,157 @@
+@font-face {
+    font-family: vazir;
+    src: url(./fonts/Vazir-Regular.ttf);
+}
+@font-face {
+    font-family: salamat;
+    src: url(./fonts/Salamat.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+    width: 75%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9EC5A;
+    font-family: vazir;
+}
+header > a{
+    text-decoration: none;
+    color: unset;
+    margin-left: 4rem;
+    margin-bottom: 0;
+}
+header h5{
+    margin-right: 50%;
+    transform: translateX(50%);
+    margin-bottom: 0;
+}
+aside{
+    width: 25%;
+    height: 100vh;
+    background-color: #1D2460;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+aside > h4{
+    color: #fff;
+    font-family: vazir;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 0 3rem;
+    padding: 1rem;
+}
+.aside--sports{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    overflow-y: auto;
+}
+.aside--sports > a{
+    min-width: 16rem;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: vazir;
+    color: unset;
+    background-color: #fff;
+    padding: 0.2rem 0;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+}
+.edit-sport{
+    position: relative;
+    right: 5.3rem;
+    bottom: 1.8rem;
+    visibility: hidden;
+}
+.edit-sport:hover{
+    visibility: visible;
+}
+.edit-sport a{
+    text-decoration: none;
+    color: unset;
+    margin-right: 0.7rem;
+    margin-bottom: 0;
+}
+.aside--sports > a:hover{
+    background-color: rgb(223, 219, 219);
+}
+.aside--sports > a:hover + .edit-sport{
+    visibility: visible;
+}
+aside > a{
+    display: inline-block;
+    margin: 1rem 0 1rem 32%;
+    text-decoration: none;
+    font-family: vazir;
+    color: #13EDE5;
+}
+aside > .line{
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+aside > form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    direction: rtl;
+    font-family: vazir;
+}
+aside > form input{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 3px 7px;
+}
+aside > form button{
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 2.8rem;
+    margin-top: 0.5rem;
+    background-color: #07FF5A;
+}
+main{
+    min-height: 91.5vh;
+    width: 75%;
+    background-color: #046C6F;
+}
+.main--content{
+    width: 100%;
+    padding: 5% 10% 5% 10%;
+    direction: rtl;
+}
+.main--content table{
+    color: white;
+    font-family: vazir;
+    text-align: center;
+}
+.main--content table thead tr th:not(:first-of-type){
+    color: yellow;
+}
+.main--content table tbody tr td:last-of-type a{
+    text-decoration: none;
+}
+.main--content table tbody tr td:last-of-type a:first-of-type{
+    color: greenyellow;
+    margin-left: 1.5rem;
+}
+.main--content table tbody tr td:last-of-type a:nth-of-type(2){
+    color: rgb(255, 117, 117);
+}
+.main--content table tbody tr:hover{
+    background-color: #088a8f;
+}

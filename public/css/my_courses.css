@@ -1,0 +1,54 @@
+@font-face {
+    font-family: leyla;
+    src: url(./fonts/leyla_0.ttf);
+}
+@font-face {
+    font-family: bnazanin;
+    src: url(./fonts/BNazanin.ttf);
+}
+@font-face {
+    font-family: vazir;
+    src: url(./fonts/Vazir-Regular.ttf);
+}
+@font-face {
+    font-family: salamat;
+    src: url(./fonts/Salamat.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+main{
+    width: 100%;
+    min-height: 73vh;
+    background-color: #1D2460;
+    direction: rtl;
+}
+main h5{
+    width: fit-content;
+    font-family: vazir;
+    color: white;
+    padding: 4rem 0 10px 0;
+    margin-right: 6rem;
+    border-bottom: 1px solid #fff;
+}
+.main--content{
+    width: 100%;
+    margin-top: 4rem;
+    padding: 0 10% 5% 10%;
+}
+.main--content table{
+    color: white;
+    font-family: vazir;
+    text-align: center;
+}
+.main--content table thead tr th:not(:first-of-type){
+    color: yellow;
+}
+.main--content table tbody tr td:last-of-type a{
+    text-decoration: none;
+    color: greenyellow;
+}
+.main--content table tbody tr:hover{
+    background-color: #2a3385;
+}

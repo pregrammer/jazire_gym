@@ -1,0 +1,100 @@
+@font-face {
+    font-family: leyla;
+    src: url(./fonts/leyla_0.ttf);
+}
+@font-face {
+    font-family: bnazanin;
+    src: url(./fonts/BNazanin.ttf);
+}
+@font-face {
+    font-family: vazir;
+    src: url(./fonts/Vazir-Regular.ttf);
+}
+@font-face {
+    font-family: salamat;
+    src: url(./fonts/Salamat.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+main{
+    width: 100%;
+    height: 73vh;
+    background-color: #1D2460;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main--content{
+    width: 90%;
+    height: 90%;
+    background-color: #09FFF8;
+    border-radius: 1.5rem;
+    direction: rtl;
+}
+.main--content h5{
+    font-family: vazir;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid #000;
+    width: fit-content;
+    padding-bottom: 0.5rem;
+}
+.main--form-about{
+    width: 85%;
+    height: 55%;
+    margin-right: 7.5%;
+}
+.form-row{
+    padding: 1rem;
+    font-family: vazir;
+}
+.form-row input{
+    border-radius: 10px;
+    border: none;
+    width: 30%;
+    padding: 4px;
+    margin-right: 7px;
+}
+.form-row:first-of-type input:first-of-type{
+    margin-left: 22%;
+}
+.form-row:first-of-type label:first-of-type{
+    margin-right: 0.7rem;
+}
+.form-row:nth-of-type(2) input:first-of-type{
+    margin-left: 25%;
+}
+.form-row:nth-of-type(3) textarea{
+    margin-right: 1rem;
+    border-radius: 10px;
+    border: none;
+    width: 94%;
+    resize: none;
+    padding: 5px;
+}
+.form-row:nth-of-type(3) label{
+    position: relative;
+    top: -4rem;
+}
+.main--form-about button{
+    font-family: vazir;
+    padding: 0.3rem 2.5rem;
+    margin-right: 81%;
+}
+.main--form-change-pass{
+    width: 85%;
+    height: 29%;
+    margin-right: 7.5%;
+    margin-top: 5px;
+    padding-top: 2rem;
+}
+.main--form-change-pass .form-row:first-of-type input:first-of-type{
+    margin-left: 17%;
+}
+.main--form-change-pass button{
+    font-family: vazir;
+    padding: 0.3rem 3rem;
+    margin-right: 81%;
+}
