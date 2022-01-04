@@ -32,6 +32,10 @@ class CourseController extends Controller
 
     public function index_submit($course_id = null)
     {
+        if (auth()->id() != 1) {
+            return response('!دسترسی غیر مجاز', 403);
+        }
+
         $course_detail = null;
         if ($course_id) {
             $course_detail = (DB::table('courses')->where('id', $course_id)->select()->get())[0];
@@ -45,6 +49,10 @@ class CourseController extends Controller
 
     public function add_course(Request $request)
     {
+        if (auth()->id() != 1) {
+            return response('!دسترسی غیر مجاز', 403);
+        }
+
         $bgc_name = "1";
         $maxId = DB::table('courses')->where('id', DB::raw("(select max(`id`) from courses)"))->get();
         if ($maxId->count()) {
@@ -73,6 +81,10 @@ class CourseController extends Controller
 
     public function edit_course(Request $request, $course_id)
     {
+        if (auth()->id() != 1) {
+            return response('!دسترسی غیر مجاز', 403);
+        }
+
         $images = (DB::table('courses')->where('id', $course_id)->select('bgcImage', 'coachImage')->get())[0];
 
         $newBgcImage = "";
@@ -120,6 +132,10 @@ class CourseController extends Controller
 
     public function delete_course($course_id)
     {
+        if (auth()->id() != 1) {
+            return response('!دسترسی غیر مجاز', 403);
+        }
+        
         $course = (DB::table('courses')->where('id', $course_id)->select('bgcImage', 'coachImage')->get())[0];
         File::delete(public_path('imgs/course_bgc/' . $course->bgcImage));
         File::delete(public_path('imgs/coach/' . $course->coachImage));
@@ -142,6 +158,9 @@ class CourseController extends Controller
 
     public function add_credit_to_course($order_id)
     {
+        if (auth()->id() != 1) {
+            return response('!دسترسی غیر مجاز', 403);
+        }
 
         DB::table('orders')->where('id', $order_id)->increment('dayCount', 30);
         

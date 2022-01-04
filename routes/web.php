@@ -56,7 +56,7 @@ Route::get('/course/order/{course_id}',  [CourseController::class, 'order_course
 
 
 
-Route::get('/management',  [ManagementController::class, 'index'])->name('management');
+Route::get('/management',  [ManagementController::class, 'index'])->name('management')->middleware('auth');
 Route::get('/management/course-athlete/{course_id}',  [ManagementController::class, 'show_course_athletes'])->name('show_course_athletes');
 
 Route::get('/course/order/delete/{order_id}',  [ManagementController::class, 'delete_order'])->name('delete_order');

@@ -39,6 +39,10 @@ class ManagementController extends Controller
 
     public function show_course_athletes($course_id)
     {
+        if (auth()->id() != 1) {
+            return response('!دسترسی غیر مجاز', 403);
+        }
+
         $courses = DB::table('courses')->select('id', 'name')->get();
 
         $orders = DB::table('orders')->where('course_id', $course_id)->select()->get();
@@ -68,6 +72,10 @@ class ManagementController extends Controller
 
     public function delete_order($order_id)
     {
+        if (auth()->id() != 1) {
+            return response('!دسترسی غیر مجاز', 403);
+        }
+        
         DB::table('orders')->where('id', $order_id)->delete();
         
         return back();
