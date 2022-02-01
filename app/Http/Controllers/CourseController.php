@@ -158,10 +158,7 @@ class CourseController extends Controller
 
     public function add_credit_to_course($order_id)
     {
-        if (auth()->id() != 1) {
-            return response('!دسترسی غیر مجاز', 403);
-        }
-
+        
         DB::table('orders')->where('id', $order_id)->increment('dayCount', 30);
         
         DB::table('orders')->where('id', $order_id)->update([

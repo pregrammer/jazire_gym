@@ -40,11 +40,10 @@
                 <td><a href="{{ route('add_credit_to_course', ['order_id'=>$user_orders[$loop->index]->id]) }}">افزودن یک ماه اعتبار</a></td>
               </tr>
               @empty
-                <tr>هیچ دوره ای برای نمایش وجود ندارد</tr>
-              @endforelse              
               <tr>
                 <td colspan="6">دوره ای برای نمایش وجود ندارد!</td>
               </tr>
+              @endforelse              
             </tbody>
           </table>
         </div>
